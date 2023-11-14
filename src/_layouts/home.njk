@@ -8,7 +8,7 @@ layout: base
   </div>
 </article>
 
-{%- for subpage in collections.subpage -%}
+{%- for subpage in collections.subpage | sortByOrder -%}
 <article class="region">
   <div class="wrapper flow prose">
     {{ subpage.content | safe }}
