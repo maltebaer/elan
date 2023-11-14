@@ -23,7 +23,7 @@ module.exports = {
             url: 'mailto:hello@elanberlin.com'
         },
         {
-            text: 'LinkedInd',
+            text: 'LinkedIn',
             url: 'https://www.linkedin.com/company/elanberlin/'
         },
         {
