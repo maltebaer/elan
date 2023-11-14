@@ -1,0 +1,32 @@
+.switcher {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--switcher-gap, var(--gutter));
+}
+
+.switcher > * {
+    flex-grow: 1;
+    flex-basis: calc((var(--switcher-container-width, 30rem) - 100%) * 999);
+}
+
+.switcher[data-layout="1-2"] > :last-child {
+    flex-grow: 2;
+}
+
+@media (min-width: 70rem) {
+    .switcher[data-layout="1-2-1"] > :nth-child(1) {
+        text-align: left;
+    }
+    .switcher[data-layout="1-2-1"] > :nth-child(2) {
+        text-align: center;
+    }
+    .switcher[data-layout="1-2-1"] > :nth-child(3) {
+        text-align: right;
+    }
+}
+
+/* limits horizontal layout to 4 childs */
+.switcher > :nth-last-child(n + 5),
+.switcher > :nth-last-child(n + 5) ~ * {
+    flex-basis: 100%;
+}

@@ -1,0 +1,16 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home > * {
+    flex-basis: 60vh;
+}
+
+.home > :first-child {
+    translate: 0 -5%;
+}
+.home > :last-child {
+    translate: 0 5%;
+}
