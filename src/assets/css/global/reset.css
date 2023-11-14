@@ -55,6 +55,7 @@ img,
 picture {
   max-inline-size: 100%;
   display: block;
+  block-size: auto;
 }
 
 /* Inherit fonts for inputs and buttons */
