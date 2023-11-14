@@ -5,7 +5,7 @@
   --text: var(--gray-10);
   --background: var(--gray-0);
 
-  --font-base: "Helvetica Neue", Arial, Roboto, sans-serif;
+  --font-base: 'Helvetica Neue', Arial, Roboto, sans-serif;
   --tracking: -0.05ch; /* todo: use or delete */
   --tracking-s: -0.001ch; /* todo: use or delete */
 
