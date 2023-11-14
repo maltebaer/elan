@@ -2,6 +2,7 @@
 node_modules
 
 # generated files
+.DS_Store
 dist
 src/_includes/css
 src/_includes/scripts
@@ -11,4 +12,3 @@ src/_includes/scripts
 
 # secret data
 .env
-
