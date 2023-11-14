@@ -8,28 +8,28 @@ const autoprefixer = require('autoprefixer');
 const cssnano = require('cssnano');
 
 module.exports = eleventyConfig => {
-  eleventyConfig.addTemplateFormats('css');
+    eleventyConfig.addTemplateFormats('css');
 
-  eleventyConfig.addExtension('css', {
-    outputFileExtension: 'css',
-    compile: async (content, path) => {
-      if (path !== './src/assets/css/global.css') {
-        return;
-      }
+    eleventyConfig.addExtension('css', {
+        outputFileExtension: 'css',
+        compile: async (content, path) => {
+            if (path !== './src/assets/css/style.css') {
+                return;
+            }
 
-      return async () => {
-        let output = await postcss([
-          postcssImportExtGlob,
-          postcssImport,
-          tailwindcss,
-          autoprefixer,
-          cssnano
-        ]).process(content, {
-          from: path
-        });
+            return async () => {
+                let output = await postcss([
+                    postcssImportExtGlob,
+                    postcssImport,
+                    tailwindcss,
+                    autoprefixer,
+                    cssnano
+                ]).process(content, {
+                    from: path
+                });
 
-        return output.css;
-      };
-    }
-  });
+                return output.css;
+            };
+        }
+    });
 };
