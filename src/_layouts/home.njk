@@ -2,16 +2,14 @@
 layout: base
 ---
 
-<article class="region">
-  <div class="wrapper flow prose">
+<article class="home | page">
     {{ content | safe }}
-  </div>
 </article>
 
 {%- for subpage in collections.subpage | sortByOrder -%}
-<article class="region">
-  <div class="wrapper flow prose">
-    {{ subpage.content | safe }}
-  </div>
-</article>
+    <article
+    class="page | wrapper region switcher"
+    data-layout="1-2">
+        {{ subpage.content | safe }}
+    </article>
 {%- endfor -%}

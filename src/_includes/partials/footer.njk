@@ -1,13 +1,11 @@
-<footer class="site-foot">
-  <div class="wrapper">
-    <div class="site-foot__inner">
-      <nav id="footernav" class="site-foot__inner text-step-0" aria-label="Footer">
-        {% for item in navigation.bottom %}
-
-        <a href="{{ item.url }}">{{ item.text }}</a>
-
-        {% endfor %}
-      </nav>
-    </div>
-  </div>
+<footer>
+    <nav>
+        <ul class="wrapper switcher">
+            {% for item in navigation.bottom %}
+                <li>
+                    <a href="{{ item.url }}">{{ item.text }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+    </nav>
 </footer>
