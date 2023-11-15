@@ -1,17 +1,15 @@
-header {
+.header {
   padding-block: var(--space-l);
 }
 
-header > nav > ul {
+.header nav ul {
   --cluster-horizontal-alignment: flex-start;
-}
 
-header > nav a {
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-header ul {
   padding: 0;
   list-style: none;
+}
+
+.header nav a {
+  text-decoration: none;
+  text-transform: uppercase;
 }

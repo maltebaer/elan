@@ -1,8 +1,8 @@
-footer {
-    padding-block: var(--space-l);
+.footer {
+  padding-block: var(--space-l);
 }
 
-footer ul {
-    padding: 0;
-    list-style: none;
+.footer ul {
+  padding: 0;
+  list-style: none;
 }
