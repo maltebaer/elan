@@ -4,15 +4,18 @@
     "items": [
         {
             "name": "Dark",
-            "value": "#16191d"
+            "value": "#16191d",
+            "src": "var(--gray-10)"
         },
         {
             "name": "Light",
-            "value": "#f8f9fa"
+            "value": "#f8f9fa",
+            "src": "var(--gray-0)"
         },
         {
-            "name": "Primary",
-            "value": "#b197fc"
+            "name": "Accent",
+            "value": "#b197fc",
+            "src": "var(--violet-3)"
         }
     ]
 }

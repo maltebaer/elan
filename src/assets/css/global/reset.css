@@ -12,17 +12,17 @@
   margin: 0;
 }
 
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role='list'],
-ol[role='list'] {
-  list-style: none;
+/* Allow percentage-based heights in the application */
+html,
+body {
+  height: 100%;
 }
 
-/* Prevent zooming when orientation changes on some iOS devices */
 html {
+  -webkit-font-smoothing: antialiased;
+  /* Prevent zooming when orientation changes on some iOS devices */
   text-size-adjust: none;
   -webkit-text-size-adjust: none;
-  -webkit-font-smoothing: antialiased;
 }
 
 /* Set core root defaults */
@@ -32,7 +32,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: 100vh;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -45,9 +44,9 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture {
-  max-inline-size: 100%;
   display: block;
   block-size: auto;
+  max-inline-size: 100%;
 }
 
 /* Inherit fonts for inputs and buttons */

@@ -1,14 +1,5 @@
 /* Global variables */
 :root {
-  --brand: var(--gray-10);
-  --accent: var(--violet-3); /* todo: use or delete */
-  --text: var(--gray-10);
-  --background: var(--gray-0);
-
-  --font-base: 'Helvetica Neue', Arial, Roboto, sans-serif;
-  --tracking: -0.05ch; /* todo: use or delete */
-  --tracking-s: -0.001ch; /* todo: use or delete */
-
   --gutter: var(--space-s-m);
   --wrapper-width: clamp(16rem, 93vw, 85rem);
 

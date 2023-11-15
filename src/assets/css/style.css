@@ -1,18 +1,20 @@
 /* custom properties */
 @import 'tailwindcss/base';
+/* todo: use via npm @import 'open-props/style'; */
+@import 'https://unpkg.com/open-props';
 @import 'global/variables.css';
 
 /* global */
-@import 'global/reset.css'; /* todo: stick to andy's reset? */
+@import 'global/reset.css';
 @import 'global/global-styles.css';
 
 /* compositions */
-@import-glob 'compositions/*.css';
+/* @import-glob 'compositions/*.css'; */
 
 /* utilities */
 @import 'tailwindcss/utilities';
-@import-glob 'utilities/*.css';
+/* @import-glob 'utilities/*.css'; */
 
 /* blocks */
 @import 'tailwindcss/components';
-@import-glob 'blocks/*.css';
+/* @import-glob 'blocks/*.css'; */
