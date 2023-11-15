@@ -16,8 +16,9 @@ const imageShortcodePlaceholder = async (
         filenameFormat: function (id, src, width, format, options) {
             const extension = path.extname(src);
             const name = path.basename(src, extension);
+            const dirname = path.dirname(src).split('/').pop();
 
-            return `${name}-${width}w.${format}`;
+            return `${dirname}_${name}-${width}w.${format}`;
         }
     });
 
