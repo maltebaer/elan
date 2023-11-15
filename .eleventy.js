@@ -29,7 +29,8 @@ const {
     minifyJs,
     mdInline,
     splitlines,
-    sortByOrder
+    sortByOrder,
+    camelise
 } = require('./config/filters/index.js');
 
 // module import shortcodes
@@ -88,6 +89,7 @@ module.exports = eleventyConfig => {
     eleventyConfig.addFilter('values', Object.values);
     eleventyConfig.addFilter('entries', Object.entries);
     eleventyConfig.addFilter('sortByOrder', sortByOrder);
+    eleventyConfig.addFilter('camelise', camelise);
 
     // 	--------------------- Custom shortcodes ---------------------
     eleventyConfig.addNunjucksAsyncShortcode('imagePlaceholder', imageShortcodePlaceholder);

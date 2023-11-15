@@ -121,11 +121,16 @@ const splitlines = (input, maxCharLength) => {
     return lines;
 };
 
-function sortByOrder(values) {
+const sortByOrder = (values) => {
     let vals = [...values];     // this *seems* to prevent collection mutation...
     return vals.sort((a, b) => Math.sign(a.data.order - b.data.order));
-}
+};
 
+const camelise = (str) => {
+    return str.replace(/(?:^\w|[A-Z]|\b\w)/g, function (word, index) {
+        return index === 0 ? word.toLowerCase() : word.toUpperCase();
+    }).replace(/\s+/g, '');
+};
 
 module.exports = {
     limit,
@@ -139,5 +144,6 @@ module.exports = {
     minifyJs,
     mdInline,
     splitlines,
-    sortByOrder
+    sortByOrder,
+    camelise
 };
