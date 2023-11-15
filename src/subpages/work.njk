@@ -28,15 +28,26 @@ order: 2
 </div>
 
 <div class="project-list | cover">
-    <ul>
-        <li>Boiler Room</li>
-        <li>Melt</li>
-        <li>Moxy</li>
-        <li>Scopes</li>
-        <li>Soundcloud</li>
-        <li>The Standard</li>
-        <li>Twitter</li>
-        <li>Whole</li>
-        <li>INTEGR8</li>
+    <ul x-data="{}">
+        {% for project in projects %}
+            <li>
+                <button x-on:click="$refs.{{ project.name | camelise }}.showModal()">{{ project.name }}</button>
+            </li>
+            <dialog class="dialog" x-ref="{{ project.name | camelise }}">
+                <div class="cluster">
+                    <h1>{{ project.name }}</h1>
+                    <button x-on:click="$refs.{{ project.name | camelise }}.close()">
+                        <span class="visually-hidden">Close modal</span>
+                        X
+                    </button>
+                </div>
+                <div class="reel">
+                    {% for image in project.images %}
+                        {% imagePlaceholder image,
+                        "Image showcasing {{ project.name }} event" %}
+                    {% endfor %}
+                </div>
+            </dialog>
+        {% endfor %}
     </ul>
 </div>

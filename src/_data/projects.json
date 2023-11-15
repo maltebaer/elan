@@ -1,0 +1,110 @@
+[
+    {
+        "name": "Boiler Room",
+        "foo": "./src/assets/images/work/boiler-room/c.png",
+        "images": [
+            "./src/assets/images/work/boiler-room/1.jpg",
+            "./src/assets/images/work/boiler-room/2.jpg",
+            "./src/assets/images/work/boiler-room/3.jpg",
+            "./src/assets/images/work/boiler-room/4.jpg",
+            "./src/assets/images/work/boiler-room/5.jpg",
+            "./src/assets/images/work/boiler-room/6.jpg",
+            "./src/assets/images/work/boiler-room/c.png"
+        ]
+    },
+    {
+        "name": "Melt",
+        "foo": "./src/assets/images/work/melt/c.png",
+        "images": [
+            "./src/assets/images/work/melt/1.jpg",
+            "./src/assets/images/work/melt/2.jpg",
+            "./src/assets/images/work/melt/3.jpg",
+            "./src/assets/images/work/melt/4.jpg",
+            "./src/assets/images/work/melt/5.jpg",
+            "./src/assets/images/work/melt/c.png"
+        ]
+    },
+    {
+        "name": "Moxy",
+        "foo": "./src/assets/images/work/moxy/c.png",
+        "images": [
+            "./src/assets/images/work/moxy/1.jpg",
+            "./src/assets/images/work/moxy/2.jpg",
+            "./src/assets/images/work/moxy/3.jpg",
+            "./src/assets/images/work/moxy/4.jpg",
+            "./src/assets/images/work/moxy/5.jpg",
+            "./src/assets/images/work/moxy/c.png"
+        ]
+    },
+    {
+        "name": "Scopes",
+        "foo": "./src/assets/images/work/scopes/c.png",
+        "images": [
+            "./src/assets/images/work/scopes/1.jpg",
+            "./src/assets/images/work/scopes/2.jpg",
+            "./src/assets/images/work/scopes/3.jpg",
+            "./src/assets/images/work/scopes/4.jpg",
+            "./src/assets/images/work/scopes/c.png"
+        ]
+    },
+    {
+        "name": "Soundcloud",
+        "foo": "./src/assets/images/work/soundcloud/c.png",
+        "images": [
+            "./src/assets/images/work/soundcloud/1.jpg",
+            "./src/assets/images/work/soundcloud/2.jpg",
+            "./src/assets/images/work/soundcloud/3.jpg",
+            "./src/assets/images/work/soundcloud/4.jpg",
+            "./src/assets/images/work/soundcloud/5.jpg",
+            "./src/assets/images/work/soundcloud/6.jpg",
+            "./src/assets/images/work/soundcloud/c.png"
+        ]
+    },
+    {
+        "name": "The Standard",
+        "foo": "./src/assets/images/work/the-standard/c.png",
+        "images": [
+            "./src/assets/images/work/the-standard/1.jpg",
+            "./src/assets/images/work/the-standard/2.jpg",
+            "./src/assets/images/work/the-standard/3.jpg",
+            "./src/assets/images/work/the-standard/4.jpg",
+            "./src/assets/images/work/the-standard/5.jpg",
+            "./src/assets/images/work/the-standard/6.jpg",
+            "./src/assets/images/work/the-standard/7.jpg",
+            "./src/assets/images/work/the-standard/c.png"
+        ]
+    },
+    {
+        "name": "Twitter",
+        "foo": "./src/assets/images/work/twitter/c.png",
+        "images": [
+            "./src/assets/images/work/twitter/1.jpg",
+            "./src/assets/images/work/twitter/c.png"
+        ]
+    },
+    {
+        "name": "Whole",
+        "foo": "./src/assets/images/work/whole/c.png",
+        "images": [
+            "./src/assets/images/work/whole/1.jpg",
+            "./src/assets/images/work/whole/2.jpg",
+            "./src/assets/images/work/whole/3.jpg",
+            "./src/assets/images/work/whole/4.jpg",
+            "./src/assets/images/work/whole/5.jpg",
+            "./src/assets/images/work/whole/6.jpg",
+            "./src/assets/images/work/whole/c.png"
+        ]
+    },
+    {
+        "name": "INTEGR8",
+        "foo": "./src/assets/images/work/integr8/c.png",
+        "images": [
+            "./src/assets/images/work/integr8/1.jpg",
+            "./src/assets/images/work/integr8/2.jpg",
+            "./src/assets/images/work/integr8/3.jpg",
+            "./src/assets/images/work/integr8/4.jpg",
+            "./src/assets/images/work/integr8/5.jpg",
+            "./src/assets/images/work/integr8/c.png"
+        ]
+    }
+]

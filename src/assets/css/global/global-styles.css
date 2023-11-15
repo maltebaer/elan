@@ -57,6 +57,12 @@ main:focus {
   outline: none;
 }
 
+dialog {
+  margin: auto;
+  color: var(--color-light);
+  background: var(--color-dark);
+}
+
 /* base selection styles that invert whatever colours are rendered */
 ::selection {
   background: var(--color-accent);
