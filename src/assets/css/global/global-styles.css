@@ -22,8 +22,6 @@ h3 {
 
   text-transform: uppercase;
   text-decoration: line-through;
-
-  margin-bottom: 3em;
 }
 
 /* set line lengths */
@@ -59,6 +57,7 @@ main:focus {
 
 dialog {
   margin: auto;
+  padding: var(--space-xs-s);
   color: var(--color-light);
   background: var(--color-dark);
 }

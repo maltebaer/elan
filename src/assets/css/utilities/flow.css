@@ -6,3 +6,9 @@ Info about this implementation: https://piccalil.li/quick-tip/flow-utility/
 .flow > * + * {
   margin-block-start: var(--flow-space, 1em);
 }
+
+.flow > h1,
+.flow > h2,
+.flow > h3 {
+  margin-bottom: 3em;
+}

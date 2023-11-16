@@ -33,19 +33,22 @@ order: 2
             <li>
                 <button x-on:click="$refs.{{ project.name | camelise }}.showModal()">{{ project.name }}</button>
             </li>
+
             <dialog class="dialog" x-ref="{{ project.name | camelise }}">
-                <div class="cluster">
-                    <h1>{{ project.name }}</h1>
-                    <button x-on:click="$refs.{{ project.name | camelise }}.close()">
-                        <span class="visually-hidden">Close modal</span>
-                        X
-                    </button>
-                </div>
-                <div class="reel">
-                    {% for image in project.images %}
-                        {% imagePlaceholder image,
-                        "Image showcasing {{ project.name }} event" %}
-                    {% endfor %}
+                <div class="stack">
+                    <div class="cluster">
+                        <h1>{{ project.name }}</h1>
+                        <button x-on:click="$refs.{{ project.name | camelise }}.close()">
+                            <span class="visually-hidden">Close modal</span>
+                            X
+                        </button>
+                    </div>
+                    <div class="reel">
+                        {% for image in project.images %}
+                            {% imagePlaceholder image,
+                            "Image showcasing {{ project.name }} event" %}
+                        {% endfor %}
+                    </div>
                 </div>
             </dialog>
         {% endfor %}
