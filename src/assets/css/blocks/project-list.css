@@ -1,15 +1,10 @@
 .project-list ul {
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
 .project-list ul > li {
-  font-size: var(--size-step-2);
-  text-align: right;
-  text-transform: uppercase;
-}
-
-.project-list button {
-  all: unset;
-  cursor: pointer;
+    font-size: var(--size-step-2);
+    text-align: right;
+    text-transform: uppercase;
 }

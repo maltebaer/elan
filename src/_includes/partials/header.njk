@@ -1,15 +1,34 @@
 <header class="header">
     <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
 
-    <nav class="cluster wrapper">
+    <div
+        class="cluster wrapper"
+        x-data="{
+            isOpen: false,
+            toggleMenu() {
+                this.isOpen ? $refs.menu.close() : $refs.menu.showModal()
+                this.isOpen = $refs.menu.open
+            },
+        }">
         <a href="/">ELAN Berlin</a>
 
-        <ul class="cluster">
-            {% for item in navigation.top %}
-                <li>
-                    <a href="{{ item.url }}">{{item.text}}</a>
-                </li>
-            {% endfor %}
-        </ul>
-    </nav>
+        <nav class="header__desktop-nav">
+            <ul class="cluster">{% include "partials/menu-items.njk" %}</ul>
+        </nav>
+
+        <button class="header__menu-button" x-on:click="toggleMenu">MENU</button>
+
+        <dialog x-ref="menu" class="menu-dialog">
+            <div class="stack">
+                <div>
+                    <button x-on:click="toggleMenu" autofocus>X</button>
+                </div>
+
+                <nav>
+                    <ul>{% include "partials/menu-items.njk" %}</ul>
+                </nav>
+            </div>
+        </dialog>
+    </div>
+
 </header>

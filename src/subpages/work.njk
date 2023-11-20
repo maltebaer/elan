@@ -34,11 +34,11 @@ order: 2
                 <button x-on:click="$refs.{{ project.name | camelise }}.showModal()">{{ project.name }}</button>
             </li>
 
-            <dialog class="dialog" x-ref="{{ project.name | camelise }}">
+            <dialog x-ref="{{ project.name | camelise }}" style="--stack-space: var(--space-xs-s); --cluster-vertical-alignment: baseline;">
                 <div class="stack">
                     <div class="cluster">
                         <h1>{{ project.name }}</h1>
-                        <button x-on:click="$refs.{{ project.name | camelise }}.close()">
+                        <button x-on:click="$refs.{{ project.name | camelise }}.close()" autofocus>
                             <span class="visually-hidden">Close modal</span>
                             X
                         </button>

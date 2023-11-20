@@ -1,0 +1,5 @@
+{% for item in navigation %}
+    <li>
+        <a x-on:click="toggleMenu()" href="{{ item.url }}">{{item.text}}</a>
+    </li>
+{% endfor %}

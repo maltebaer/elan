@@ -4,66 +4,71 @@
     project: https://cube.fyi/css.html
 */
 body {
-  color: var(--color-dark);
-  accent-color: var(--color-accent);
-  background: var(--color-light);
+    color: var(--color-dark);
+    accent-color: var(--color-accent);
+    background: var(--color-light);
 
-  font-size: var(--size-step-0);
-  font-family: var(--font-base);
+    font-size: var(--size-step-0);
+    font-family: var(--font-base);
 }
 
 /* base typesetting */
 h1,
 h2,
 h3 {
-  font-weight: 400;
-  font-size: var(--size-step-0);
-  line-height: 1;
+    font-weight: 400;
+    font-size: var(--size-step-0);
+    line-height: 1;
 
-  text-transform: uppercase;
-  text-decoration: line-through;
+    text-transform: uppercase;
+    text-decoration: line-through;
 }
 
 /* set line lengths */
 p,
 li,
 blockquote:not([class]) {
-  max-width: 50ch;
+    max-width: 50ch;
 }
 
 h1,
 h2,
 h3 {
-  max-width: 20ch;
+    max-width: 20ch;
 }
 
 /* base interactive elements */
 a {
-  color: currentcolor;
+    color: currentcolor;
 }
 
 a:hover {
-  text-decoration: line-through;
+    text-decoration: line-through;
 }
 
 :focus {
-  outline: 2px solid;
-  outline-offset: 0.3ch;
+    outline: 2px solid;
+    outline-offset: 0.3ch;
 }
 
 main:focus {
-  outline: none;
+    outline: none;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
 }
 
 dialog {
-  margin: auto;
-  padding: var(--space-xs-s);
-  color: var(--color-light);
-  background: var(--color-dark);
+    margin: auto;
+    padding: var(--space-xs-s);
+    color: var(--color-light);
+    background: var(--color-dark);
 }
 
 /* base selection styles that invert whatever colours are rendered */
 ::selection {
-  background: var(--color-accent);
-  color: var(--color-light);
+    background: var(--color-accent);
+    color: var(--color-light);
 }

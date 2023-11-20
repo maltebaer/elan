@@ -1,15 +1,31 @@
 .header {
-  padding-block: var(--space-l);
+    padding-block: var(--space-l);
+}
+
+.header__desktop-nav {
+    display: none;
 }
 
 .header nav ul {
-  --cluster-horizontal-alignment: flex-start;
-
-  padding: 0;
-  list-style: none;
+    padding: 0;
+    list-style: none;
 }
 
-.header nav a {
-  text-decoration: none;
-  text-transform: uppercase;
+.header a:not(.skip-link) {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.header a:hover {
+    text-decoration: line-through;
+}
+
+@media (min-width: 50rem) {
+    .header__menu-button {
+        display: none;
+    }
+
+    .header__desktop-nav {
+        display: revert;
+    }
 }
