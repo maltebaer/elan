@@ -1,11 +1,22 @@
 <footer class="footer">
-    <nav>
-        <ul class="wrapper switcher">
-            {% for item in navigation.bottom %}
+    <nav class="wrapper">
+        <ul>
+            <li>
+                <a href="mailto:hello@elanberlin.com">hello@elanberlin.com</a>
+            </li>
+
+            <div class="footer__social-links">
                 <li>
-                    <a href="{{ item.url }}">{{ item.text }}</a>
+                    <a href="https://www.linkedin.com/company/elanberlin/">LinkedIn</a>
                 </li>
-            {% endfor %}
+                <li>
+                    <a href="https://www.instagram.com/elanberlin/">Instagram</a>
+                </li>
+            </div>
+
+            <li>
+                <a href="/">Imprint</a>
+            </li>
         </ul>
     </nav>
 </footer>
