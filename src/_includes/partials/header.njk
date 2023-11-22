@@ -2,26 +2,23 @@
     <a href="#main" class="skip-link">{{ meta.skipContent }}</a>
 
     <div
-        class="cluster wrapper"
-        x-data="{
-            isOpen: false,
-            toggleMenu() {
-                this.isOpen ? $refs.menu.close() : $refs.menu.showModal()
-                this.isOpen = $refs.menu.open
-            },
-        }">
+        class="cluster wrapper">
         <a href="/">ELAN Berlin</a>
 
         <nav class="header__desktop-nav">
             <ul class="cluster">{% include "partials/menu-items.njk" %}</ul>
         </nav>
 
-        <button class="header__menu-button" x-on:click="toggleMenu">MENU</button>
+        <button class="header__menu-button" x-on:click="toggleModal($refs.menu)">MENU</button>
 
-        <dialog x-ref="menu" class="menu-dialog">
+        <dialog
+            x-ref="menu"
+            x-on:keyup.escape.window="cleanup($refs.menu)"
+            class="menu-dialog">
             <div class="stack">
                 <div>
-                    <button x-on:click="toggleMenu" autofocus>X</button>
+                    <span class="visually-hidden">Close modal</span>
+                    <button x-on:click="toggleModal($refs.menu)" autofocus>X</button>
                 </div>
 
                 <nav>
