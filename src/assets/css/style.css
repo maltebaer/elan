@@ -1,7 +1,5 @@
 /* custom properties */
 @import 'tailwindcss/base';
-/* todo: use via npm @import 'open-props/style'; */
-@import 'https://unpkg.com/open-props';
 @import 'global/variables.css';
 
 /* global */
