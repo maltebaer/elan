@@ -1,5 +1,5 @@
 {% for item in navigation %}
     <li>
-        <a x-on:click="toggleModal($refs.menu)" href="{{ item.url }}">{{item.text}}</a>
+        <a x-on:click="closeModal($refs.menu)" href="{{ item.url }}">{{item.text}}</a>
     </li>
 {% endfor %}

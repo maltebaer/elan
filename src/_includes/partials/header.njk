@@ -9,16 +9,15 @@
             <ul class="cluster">{% include "partials/menu-items.njk" %}</ul>
         </nav>
 
-        <button class="header__menu-button" x-on:click="toggleModal($refs.menu)">MENU</button>
+        <button class="header__menu-button" x-on:click="openModal($refs.menu)">MENU</button>
 
         <dialog
             x-ref="menu"
-            x-on:keyup.escape.window="cleanup($refs.menu)"
             class="menu-dialog">
             <div class="stack">
                 <div>
                     <span class="visually-hidden">Close modal</span>
-                    <button x-on:click="toggleModal($refs.menu)" autofocus>X</button>
+                    <button x-on:click="closeModal($refs.menu)" autofocus>X</button>
                 </div>
 
                 <nav>

@@ -31,17 +31,16 @@ order: 2
     <ul>
         {% for project in projects %}
             <li>
-                <button x-on:click="toggleModal($refs.{{ project.name | camelise }})">{{ project.name }}</button>
+                <button x-on:click="openModal($refs.{{ project.name | camelise }})">{{ project.name }}</button>
             </li>
 
             <dialog
                 x-ref="{{ project.name | camelise }}"
-                x-on:click="cleanup($refs.{{ project.name | camelise }})"
                 style="--stack-space: var(--space-xs-s); --cluster-vertical-alignment: baseline;">
                 <div class="stack">
                     <div class="cluster">
                         <h1>{{ project.name }}</h1>
-                        <button x-on:click="toggleModal($refs.{{ project.name | camelise }})" autofocus>
+                        <button x-on:click="closeModal($refs.{{ project.name | camelise }})" autofocus>
                             <span class="visually-hidden">Close modal</span>
                             X
                         </button>

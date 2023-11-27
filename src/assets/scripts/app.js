@@ -1,26 +1,24 @@
 import Alpine from 'alpinejs'
 
 Alpine.data('modal', () => ({
-    open: false,
-
-    toggleModal(el) {
-        this.open ? el.close() : el.showModal()
-        this.cleanup(el)
+    openModal(el) {
+        el.showModal()
+        this.preventBackdropScrolling()
     },
 
-    cleanup(el) {
-        this.open = el.open
-        this.toggleBackdropScrolling()
+    closeModal(el) {
+        el.close()
+        this.clearScrollStyles()
     },
 
-    toggleBackdropScrolling() {
-        if (this.open) {
-            document.documentElement.style.scrollbarGutter = 'stable'
-            document.documentElement.style.overflowY = 'hidden'
-        } else {
-            document.documentElement.style.scrollbarGutter = ''
-            document.documentElement.style.overflowY = ''
-        }
+    preventBackdropScrolling() {
+        document.documentElement.style.scrollbarGutter = 'stable'
+        document.documentElement.style.overflowY = 'hidden'
+    },
+
+    clearScrollStyles() {
+        document.documentElement.style.scrollbarGutter = ''
+        document.documentElement.style.overflowY = ''
     }
 }))
 
