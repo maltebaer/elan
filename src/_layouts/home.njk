@@ -8,7 +8,7 @@ layout: base
 
 {%- for subpage in collections.subpage | sortByOrder -%}
     <article
-        class="page | wrapper region two-column-grid"
+        class="page | region two-column-grid"
         {% if subpage.data.title === 'About' or subpage.data.title === 'Work'  %}
         data-layout="reversed"
         {% endif %}
