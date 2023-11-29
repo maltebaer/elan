@@ -1,9 +1,10 @@
 ---
+title: About
 order: 4
 ---
 
 <div class="flow">
-    <h2 id="about">About</h2>
+    <h2 id="about">{{ title }}</h2>
     <p>
         ELAN was born out of the need to challenge existing
         power dynamics and the traditional flow of knowledge
@@ -39,13 +40,17 @@ order: 4
             <a href="mailto:raquel@elanberlin.com"
                 >raquel@elanberlin.com</a
             >
-            {% imagePlaceholder "./src/assets/images/raquel.png", "Portait of Raquel", "Raquel Fedato" %}
+            {% imagePlaceholder "./src/assets/images/raquel.png",
+            "Portait of Raquel",
+            "Raquel Fedato" %}
         </div>
         <div>
             <a href="mailto:ricardo@elanberlin.com"
                 >ricardo@elanberlin.com</a
             >
-           {% imagePlaceholder "./src/assets/images/ricardo.png", "Portait of Ricardo", "Ricardo Oswald" %}
+            {% imagePlaceholder "./src/assets/images/ricardo.png",
+            "Portait of Ricardo",
+            "Ricardo Oswald" %}
         </div>
     </aside>
 </div>
