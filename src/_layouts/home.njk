@@ -8,8 +8,11 @@ layout: base
 
 {%- for subpage in collections.subpage | sortByOrder -%}
     <article
-    class="page | wrapper region switcher"
-    data-layout="1-2">
+        class="page | wrapper region two-column-grid"
+        {% if subpage.data.title === 'About' or subpage.data.title === 'Work'  %}
+        data-layout="reversed"
+        {% endif %}
+    >
         {{ subpage.content | safe }}
     </article>
 {%- endfor -%}

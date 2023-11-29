@@ -1,0 +1,17 @@
+.two-column-grid {
+    --grid-template-columns: 1fr;
+
+    display: grid;
+    grid-template-columns: var(--grid-template-columns);
+    gap: var(--gutter);
+}
+
+@media (min-width: 60rem) and (min-height: 55rem) {
+    .two-column-grid {
+        --grid-template-columns: 1fr 2fr;
+    }
+
+    .two-column-grid[data-layout='reversed'] {
+        --grid-template-columns: 2fr 1fr;
+    }
+}
