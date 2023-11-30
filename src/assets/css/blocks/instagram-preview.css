@@ -1,4 +1,5 @@
 .instagram-preview {
     --grid-min-item-size: 8rem;
     --grid-gap: var(--space-xs);
+    --grid-placement: auto-fit;
 }
