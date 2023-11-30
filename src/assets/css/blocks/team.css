@@ -3,8 +3,6 @@
     --gutter: 0;
     --flow-space: 0;
 
-    display: grid;
-    place-content: center;
     translate: 0 5%;
 }
 
@@ -13,10 +11,6 @@
 }
 .team__card:last-of-type {
     translate: 0 5%;
-}
-
-.team__mail {
-    transform: rotate(90deg);
 }
 
 @media (min-width: 60rem) and (min-height: 55rem) {
