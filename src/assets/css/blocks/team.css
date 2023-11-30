@@ -3,18 +3,24 @@
     --gutter: 0;
     --flow-space: 0;
 
-    translate: 0 5%;
+    margin-block-start: var(--space-s-m);
 }
 
 .team__card:first-of-type {
     translate: 0 -5%;
 }
+
 .team__card:last-of-type {
     translate: 0 5%;
 }
 
+.team__card img {
+    max-block-size: 400px;
+    inline-size: auto;
+}
+
 @media (min-width: 60rem) and (min-height: 55rem) {
     .team {
-        translate: 0 0;
+        margin-block-start: 0;
     }
 }
