@@ -39,13 +39,13 @@
     </head>
 
     <body
-        class="window wrapper"
+        class="window"
         x-data="modal"
         x-on:keyup.escape.window="clearScrollStyles"
         >
         {% include "partials/header.njk" %}
 
-        <main id="main" class="page-container">{{ content | safe }}</main>
+        <main id="main" class="wrapper">{{ content | safe }}</main>
 
         {% include "partials/footer.njk" %}
     </body>

@@ -1,6 +1,8 @@
 /* custom properties */
 @import 'tailwindcss/base';
 @import 'global/variables.css';
+/* todo: remove once developing is finished */
+@import 'https://unpkg.com/open-props';
 
 /* global */
 @import 'global/reset.css';
