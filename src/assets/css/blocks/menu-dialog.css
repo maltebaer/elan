@@ -5,7 +5,11 @@
     padding: var(--space-l);
     height: 100%;
     max-height: 100%;
-    width: 80%;
+    width: min(80%, 40ch);
 
     text-align: end;
+}
+
+.menu-dialog nav {
+    margin-inline-start: auto;
 }
