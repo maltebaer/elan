@@ -34,8 +34,26 @@ order: 4
     </p>
 </div>
 
-<div class="cover">
-    <aside class="team flex">
+<aside class="team">
+    <div class="switcher">
+        <article class="team__card">
+            <a class="team__mail" href="mailto:raquel@elanberlin.com"
+                    >raquel@elanberlin.com</a
+                >
+            {% imagePlaceholder "./src/assets/images/raquel.png",
+            "Portait of Raquel",
+            "Raquel Fedato" %}
+        </article>
+        <article class="team__card">
+            <a class="team__mail" href="mailto:ricardo@elanberlin.com"
+                    >ricardo@elanberlin.com</a
+                >
+            {% imagePlaceholder "./src/assets/images/ricardo.png",
+            "Portait of Ricardo",
+            "Ricardo Oswald" %}
+        </article>
+    </div>
+    {# <aside class="team flex">
         <div>
             <a href="mailto:raquel@elanberlin.com"
                 >raquel@elanberlin.com</a
@@ -52,5 +70,5 @@ order: 4
             "Portait of Ricardo",
             "Ricardo Oswald" %}
         </div>
-    </aside>
-</div>
+    </aside> #}
+</aside>

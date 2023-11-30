@@ -1,15 +1,14 @@
 .page {
-    --switcher-gap: var(--space-l-xl);
-    --switcher-container-width: 70rem;
     --region-space: var(--space-2xl-3xl);
 }
 
-.page > :nth-child(even) {
+/* todo: remove debug */
+/* .page > :nth-child(even) {
     background: thistle;
 }
 .page > :nth-child(odd) {
     background: peachpuff;
-}
+} */
 
 @media (min-width: 60rem) and (min-height: 55rem) {
     .page {

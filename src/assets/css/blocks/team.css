@@ -1,0 +1,19 @@
+.team {
+    --switcher-container-width: 12rem;
+    --gutter: 0;
+    --flow-space: 0;
+
+    display: grid;
+    place-content: center;
+}
+
+.team__card:first-of-type {
+    translate: 0 -5%;
+}
+.team__card:last-of-type {
+    translate: 0 5%;
+}
+
+.team__mail {
+    transform: rotate(90deg);
+}
