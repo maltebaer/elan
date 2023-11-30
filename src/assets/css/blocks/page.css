@@ -2,18 +2,11 @@
     --region-space: var(--space-2xl-3xl);
 }
 
-/* todo: remove debug */
-/* .page > :nth-child(even) {
-    background: thistle;
-}
-.page > :nth-child(odd) {
-    background: peachpuff;
-} */
-
 @media (min-width: 60rem) and (min-height: 55rem) {
     .page {
-        --region-space: var(--gutter);
+        --region-space: 0;
 
+        padding-block: var(--gutter);
         height: 100%;
         scroll-snap-align: center;
     }
