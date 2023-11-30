@@ -5,6 +5,7 @@
 
     display: grid;
     place-content: center;
+    translate: 0 5%;
 }
 
 .team__card:first-of-type {
@@ -16,4 +17,10 @@
 
 .team__mail {
     transform: rotate(90deg);
+}
+
+@media (min-width: 60rem) and (min-height: 55rem) {
+    .team {
+        translate: 0 0;
+    }
 }
