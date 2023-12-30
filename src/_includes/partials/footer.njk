@@ -7,16 +7,42 @@
 
             <div class="footer__social-links">
                 <li>
-                    <a href="https://www.linkedin.com/company/elanberlin/">LinkedIn</a>
+                    <a
+                        href="https://www.linkedin.com/company/elanberlin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >LinkedIn</a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/elanberlin/">Instagram</a>
+                    <a
+                        href="https://www.instagram.com/elanberlin/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >Instagram</a>
                 </li>
             </div>
 
             <li>
-                <a href="/">Imprint</a>
+                <button
+                    class="underline hover:line-through"
+                    x-on:click="openModal($refs.imprint)"
+                >Imprint</button>
             </li>
         </ul>
+
+        <dialog x-ref="imprint">
+            <div class="stack">
+                <div class="flex">
+                    <span class="visually-hidden">Close modal</span>
+                    <button class="ml-auto" x-on:click="closeModal($refs.imprint)" autofocus>X</button>
+                </div>
+
+                <div class="flow">
+                    <p>
+                        This is a demo project by <a target="_blank" rel="noopener noreferrer" href="https://github.com/maltebaer">maltebaer</a>
+                    </p>
+                </div>
+            </div>
+        </dialog>
     </nav>
 </footer>
