@@ -10,8 +10,8 @@ module.exports = {
     author: 'Malte Bär',
     authorEmail: 'maltebaer@posteo.de',
     authorWebsite: 'https://github.com/maltebaer',
-    themeColor: '#16191d', // var(--violet-3)  Manifest: defines the default theme color for the application
-    themeBgColor: '#f8f9fa', // var(--gray-0) Manifest: defines a placeholder background color for the application page to display before its stylesheet is loaded
+    themeColor: '#16191d',
+    themeBgColor: '#f8f9fa',
     meta_data: {
         opengraph_default: '/assets/images/opengraph-default.jpg', // fallback/default meta image
         opengraph_default_alt:
@@ -29,19 +29,4 @@ module.exports = {
     pagination: {
         itemsPerPage: 20
     },
-    address: {
-        // edit all presets or leave empty. They are being used in the pages for privacy.md and imprint.md
-        firma: 'Organization name',
-        street: '123 Main St.',
-        city: 'Ciudad',
-        state: 'Estado',
-        zip: '12345',
-        mobileDisplay: '+34 1234567',
-        mobileCall: ' +341234567',
-        email: 'hola@yoursite.com',
-        cif: ''
-    },
-    menu: {
-        closedText: 'Menu'
-    }
 };
